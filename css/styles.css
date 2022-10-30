@@ -15,3 +15,8 @@ body {
 .menu-item{
     padding: 15px;
 }
+
+#img_bg img{
+    max-width: 100%;
+    height: auto;
+}
