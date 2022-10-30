@@ -7,8 +7,16 @@
 </head>
 <body>
 
+    <div id="header">
+        <ul class="header-menu">
+            <li v-for="(item, i) in menus" :key="i" class="menu-item">
+                <a :href="item.path">{{item.label}}</a>
+            </li>
+        </ul>
+    </div>
+
     <div id="img_bg">
-        <img v-bind:src="BackgroundImage">背景</img>
+        <img v-bind:src="BackgroundImage">
     </div>
 
 

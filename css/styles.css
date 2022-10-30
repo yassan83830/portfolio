@@ -3,21 +3,15 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-.container {
-    width: 300px;
-    margin: auto;
+.header-menu{
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    padding: 12px;
+    margin: 0;
+    background: #e8e8e8;
 }
 
-#app h1{
-    font-size: 16px;
-    border-bottom: 1px solid #ddd;
-    padding: 16px 0;
-}
-
-#app li {
-    line-height: 1.5;
-}
-
-#app input[type="text"]{
-    padding: 2px;
+.menu-item{
+    padding: 15px;
 }
