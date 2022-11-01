@@ -2,9 +2,16 @@
     'use strict';
 
     Vue.config.devtools = true;
-    
-    var app = new Vue({
-        el: '#app',
+
+    var header = new Vue({
+        el: '#header',
+        data: {
+            title: "YASUMORI"
+        }
+    })
+
+    var hamburger = new Vue({
+        el: '#hamburger_menu',
         data(){
             return{
                 ActiveBtn: false,

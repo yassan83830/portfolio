@@ -9,7 +9,16 @@
 
 <body>
 
-    <div id="app">
+    <header id="header">
+        <div class="header-inner">
+            <h1 class="header-title" header-title>
+                {{ title }}
+            </h1>
+            <nav class=""></nav>
+        </div>
+    </header>
+
+    <div id="hamburger_menu">
         <!--ハンバーガーメニューのボタン-->
         <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'>
             <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
@@ -26,11 +35,7 @@
             </div>
         </transition>
     </div>
-<!-- 
-    <div id="img_bg">
-        <img v-bind:src="BackgroundImage">
-    </div> -->
-
+    
     <div class="background"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
