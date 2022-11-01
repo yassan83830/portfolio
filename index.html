@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>My Vue App</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-    <div id="header">
-        <ul class="header-menu">
-            <li v-for="(item, i) in menus" :key="i" class="menu-item">
-                <a :href="item.path">{{item.label}}</a>
-            </li>
-        </ul>
+    <div id="app">
+        <!--ハンバーガーメニューのボタン-->
+        <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'>
+            <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
+            <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span>
+            <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
+        </div>
+        <!--サイドバー-->
+        <transition name="menu">
+            <div class="menu" v-show="ActiveBtn">
+                <ul>
+                    <li v-for="(item, i) in menus" :key="i" class="menu-item">
+                    <a :href="item.path">{{item.label}}</a>
+                </ul>
+            </div>
+        </transition>
     </div>
 
     <div id="img_bg">
         <img v-bind:src="BackgroundImage">
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

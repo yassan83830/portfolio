@@ -3,10 +3,11 @@
 
     Vue.config.devtools = true;
     
-    var menu = new Vue({
-        el: header,
+    var app = new Vue({
+        el: '#app',
         data(){
-            return {
+            return{
+                ActiveBtn: false,
                 menus: [
                     {
                         label: "TOP",
@@ -21,9 +22,9 @@
                         path: "./index.html"
                     }
                 ]
-            };
+            }
         }
-    })
+      })
 
     var img_bg = new Vue({
         el: '#img_bg',
