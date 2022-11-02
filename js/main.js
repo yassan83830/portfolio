@@ -34,10 +34,10 @@
         }
       })
 
-    var img_bg = new Vue({
-        el: '#img_bg',
+    var background = new Vue({
+        el: '.background',
         data: {
-            BackgroundImage: 'img/top_background.png'
+            footer: "@ 2022- yassan83830"
         }
     })
 

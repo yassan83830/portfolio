@@ -129,4 +129,13 @@ body {
     background-size: cover;
     background-position: top;
     z-index: 1;
+    position: relative;
+}
+
+.background p{
+  position: absolute;
+  color: white;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
