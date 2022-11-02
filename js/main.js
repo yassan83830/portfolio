@@ -23,7 +23,7 @@
                     },
                     {
                         label: "PROFILE",
-                        path: "./index.html"
+                        path: "./profile.html"
                     },
                     {
                         label: "WORKS",
