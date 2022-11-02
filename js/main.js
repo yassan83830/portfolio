@@ -6,6 +6,7 @@
     var header = new Vue({
         el: '#header',
         data: {
+            path: "./index.html",
             title: "YASUMORI"
         }
     })
