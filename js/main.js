@@ -7,7 +7,7 @@
         el: '#header',
         data: {
             path: "./index.html",
-            title: "YASUMORI"
+            title: "yassan83830"
         }
     })
 
