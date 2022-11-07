@@ -10,11 +10,14 @@
 <body>
 
     <header id="header">
+        
         <div class="header-inner">
             <h1 class="header-title" header-title>
                 <a :href="path">{{ title }}</a>
             </h1>
         </div>
+        <nav>
+        </nav>
     </header>
 
     <div id="hamburger_menu">
@@ -29,12 +32,12 @@
             <div class="menu" v-show="ActiveBtn">
                 <ul>
                     <li v-for="(item, i) in menus" :key="i" class="menu-item">
-                    <a :href="item.path">{{item.label}}</a>
+                        <a :href="item.path">{{item.label}}</a>
                 </ul>
             </div>
         </transition>
     </div>
-    
+
     <div class="background">
         <p>{{ footer }}</p>
     </div>
