@@ -1,151 +1,140 @@
 body {
-  font-size: 16px;
-  color: aliceblue;
-  font-family: Verdana, sans-serif;
-  margin: 0;
+    font-size: 16px;
+    color: aliceblue;
+    font-family: Verdana, sans-serif;
+    margin: 0;
 }
 
 header {
-  /* background-color: pink; */
-  width: 100%;
-  height: 10vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
+    background-color: pink;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+   
+  }
 
-.header-inner {
-  padding: 0 40px;
-  /*左右の余白確保*/
-  justify-content: space-between;
-  height: inherit;
-  /*親要素の高さを継承*/
-  position: relative;
-}
-
-/* ヘッダーのロゴ部分 */
-.header-title a {
-  font-size: 4.2em;
-  width: 20vw;
-  color: black;
-  -webkit-text-stroke: 1px #FFF;
-  text-decoration: none;
-  z-index: 170;
-}
-
+  .header-inner {
+    padding: 0 20px; /*左右の余白確保*/
+    display: flex; /*ロゴとハンバーガーメニューを横に並べる*/
+    align-items: center;
+    justify-content: space-between;
+    height: inherit; /*親要素の高さを継承*/
+    position: relative;
+    
+  }
+  
+  /* ヘッダーのロゴ部分 */
+  .header-title a{
+    width: 320px;    
+    color: black;
+    text-decoration: none;
+    font-size: 4.2em;
+  }
+  
 
 /* hambuger menu */
 /*ボタン*/
 .hamburger_btn {
-  position: fixed;
-  top: 0;
-  right: 50px;
-  width: 7vw;
-  height: 6vh;
-  cursor: pointer;
-  z-index: 150;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 70px;
+    height: 72px;
+    cursor: pointer;
+    z-index: 150;
+  }
+  
+  .hamburger_btn .line {
+    position: absolute;
+    top: 34px;
+    left: 0px;
+    width: 64px;
+    height: 6px;
+    background: #333333;
+    text-align: center;
+  }
+  
+  .hamburger_btn .line_01 {
+    top: 20px;
+    transition: 0.4s ease;
+  }
+  .hamburger_btn .line_02 {
+    top: 32px;
+    transition: 0.4s ease;
+  }
+  .hamburger_btn .line_03 {
+    top: 44px;
+    transition: 0.4s ease;
+  }
+  
+  
+  .btn_line01 {
+    transform: translateY(12px) rotate(-45deg);
+    transition: 0.4s ease;
+  }
+  .btn_line02 {
+    transition: 0.4s ease;
+    opacity: 0;
+  }
+  .btn_line03 {
+    transform: translateY(-12px) rotate(45deg);
+    transition: 0.4s ease;
+  }
+  
+  /*サイドバー*/
+  .menu-enter-active, .menu-leave-active {
+    transition: opacity 0.4s;
+  }
+  .menu-enter, .menu-leave-to {
+    opacity: 0;
+  }
+  .menu-leave, .menu-enter-to{
+    opacity: 1;
+  }
+  
+  .menu li {
+    list-style: none;
+    line-height: 1;
+    padding: 1rem;
+  }
+  .menu {
+    background-color: rgba(197, 197, 197, 0.671);
+    z-index: 30;
+    padding: 2rem 1rem;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 170;
+  }
+  .menu a {
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    font-size: 4rem;
+    padding: 0 2rem;
+  }
+  .menu ul{
+    margin: 2rem;
+    padding: 0;    
+    text-align: center;
+  }
+  
+  
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/top_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+    position: relative;
 }
 
-.hamburger_btn .line {
-  position: absolute;
-  top: 3vh;
-  left: 0px;
-  width: inherit;
-  height: 10px;
-  background: #333333;
-  text-align: center;
-}
-
-.hamburger_btn .line_01 {
-  top: 3vh;
-  transition: 0.4s ease;
-}
-
-.hamburger_btn .line_02 {
-  top: 4.6vh;
-  transition: 0.4s ease;
-}
-
-.hamburger_btn .line_03 {
-  top: 6.2vh;
-  transition: 0.4s ease;
-}
-
-
-.btn_line01 {
-  transform: translateY(1.6vh) rotate(-45deg);
-  transition: 0.4s ease;
-}
-
-.btn_line02 {
-  transition: 0.4s ease;
-  opacity: 0;
-}
-
-.btn_line03 {
-  transform: translateY(-1.6vh) rotate(45deg);
-  transition: 0.4s ease;
-}
-
-/*サイドバー*/
-.menu-enter-active,
-.menu-leave-active {
-  transition: opacity 0.4s;
-}
-
-.menu-enter,
-.menu-leave-to {
-  opacity: 0;
-}
-
-.menu-leave,
-.menu-enter-to {
-  opacity: 1;
-}
-
-.menu {
-  background-color: rgba(197, 197, 197, 0.671);
-  padding: 2rem 1rem;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: 130;
-}
-
-.menu li {
-  list-style: none;
-  line-height: 1;
-  padding: 1rem;
-}
-
-.menu a {
-  color: rgb(66, 66, 66);
-  text-decoration: none;
-  font-size: 6em;
-  padding: 0 2rem;
-}
-
-.menu ul {
-  margin: 2rem;
-  padding: 0;
-  text-align: center;
-}
-
-
-.background {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../img/top_background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  z-index: 1;
-  position: relative;
-}
-
-.background p {
+.background p{
   position: absolute;
   color: white;
   bottom: 25px;
