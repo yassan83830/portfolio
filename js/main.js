@@ -41,5 +41,9 @@
         }
     })
 
+    var profileApp = new Vue({
+        el: '#app',
+        vuetify: new vuetify(),
+    })
 
 })();
