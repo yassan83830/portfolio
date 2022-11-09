@@ -15,18 +15,16 @@
         <v-app>
             <v-main>
                 <!-- Header -->
-                <v-card class="header">
-                    <v-app-bar absolute prominent src="./img/top_background.png" fade-img-on-scroll scroll-target="#sclloing-techniques-3">
+                <v-card class="header" height="125">
+                    <v-app-bar absolute prominent src="./img/top_background.png">
                        
                         <template v-slot:img="{ props }">
                             <v-img v-bind="props" gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)">
                             </v-img>
                         </template>
 
-                        <v-toolbar-title white>YASSAN</v-toolbar-title>
-                       
-
-                        <v-spacer></v-spacer>
+                        <v-toolbar-title>YASSAN</v-toolbar-title>
+                       <v-spacer></v-spacer>
 
                         <v-btn icon>
                             <v-icon>mdi-heart</v-icon>
@@ -34,10 +32,31 @@
                     </v-app-bar>
                 </v-card>
 
-                <v-container>Hello world</v-container>
-                <v-card width="400px" class="mx-auto mt-5">
-                    <v-card-title>fadfa</v-card-title>
-                    <v-card-subtitle>fadfa</v-card-subtitle>
+                <div class="background"></div>
+
+                <!--       -->
+                <!-- About -->
+                <!--       -->
+                <p id="subtitle" class="text-h3">
+                    About
+                </p>
+                
+                <v-card class="mx-auto mt-5">
+                    <v-card-title>yassan83830</v-card-title>
+                    <v-card-subtitle>学歴</v-card-subtitle>
+                    <v-card-text>fadsfasfasdfadf</v-card-text>
+                    
+                    <v-card-subtitle>学歴</v-card-subtitle>
+                    <v-card-text>fadsfasfasdfadf</v-card-text>
+                    
+                    <v-card-subtitle>賞</v-card-subtitle>
+                    <v-card-text>fadsfasfasdfadf</v-card-text>
+                    
+                    <v-card-subtitle>スキル</v-card-subtitle>
+                    <v-card-text>fadsfasfasdfadf</v-card-text>
+
+                    
+                    <v-card-subtitle>SNS</v-card-subtitle>
                     <v-card-text>fadsfasfasdfadf</v-card-text>
                 </v-card>
             </v-main>
