@@ -14,24 +14,37 @@
     <div id="app">
         <v-app>
             <v-main>
+
+                <!--        -->
                 <!-- Header -->
-                <v-card class="header" height="125">
-                    <v-app-bar absolute prominent src="./img/top_background.png">
-                       
+                <!--        -->
+                <v-card class="header" height="175">
+                    <v-app-bar absolute dark prominent src="./img/top_background.png">
+
                         <template v-slot:img="{ props }">
                             <v-img v-bind="props" gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)">
                             </v-img>
                         </template>
 
                         <v-toolbar-title>YASSAN</v-toolbar-title>
-                       <v-spacer></v-spacer>
+                        <v-spacer></v-spacer>
 
                         <v-btn icon>
                             <v-icon>mdi-heart</v-icon>
-                          </v-btn>
+                        </v-btn>
+
+                        <template v-slot:extension>
+                            <v-tabs align-with-title>
+                                <v-tab>About</v-tab>
+                                <v-tab>Works</v-tab>
+                            </v-tabs>
+                        </template>
                     </v-app-bar>
                 </v-card>
 
+                <!--                -->
+                <!-- Background img -->
+                <!--                -->
                 <div class="background"></div>
 
                 <!--       -->
@@ -40,22 +53,22 @@
                 <p id="subtitle" class="text-h3">
                     About
                 </p>
-                
+
                 <v-card class="mx-auto mt-5">
                     <v-card-title>yassan83830</v-card-title>
                     <v-card-subtitle>学歴</v-card-subtitle>
                     <v-card-text>fadsfasfasdfadf</v-card-text>
-                    
+
                     <v-card-subtitle>学歴</v-card-subtitle>
                     <v-card-text>fadsfasfasdfadf</v-card-text>
-                    
+
                     <v-card-subtitle>賞</v-card-subtitle>
                     <v-card-text>fadsfasfasdfadf</v-card-text>
-                    
+
                     <v-card-subtitle>スキル</v-card-subtitle>
                     <v-card-text>fadsfasfasdfadf</v-card-text>
 
-                    
+
                     <v-card-subtitle>SNS</v-card-subtitle>
                     <v-card-text>fadsfasfasdfadf</v-card-text>
                 </v-card>
