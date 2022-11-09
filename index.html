@@ -3,48 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Vue App</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 
 <body>
-
-    <header id="header">
-        
-        <div class="header-inner">
-            <h1 class="header-title" header-title>
-                <a :href="path">{{ title }}</a>
-            </h1>
-        </div>
-        <nav>
-        </nav>
-    </header>
-
-    <div id="hamburger_menu">
-        <!--ハンバーガーメニューのボタン-->
-        <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'>
-            <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
-            <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span>
-            <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
-        </div>
-        <!--サイドバー-->
-        <transition name="menu">
-            <div class="menu" v-show="ActiveBtn">
-                <ul>
-                    <li v-for="(item, i) in menus" :key="i" class="menu-item">
-                        <a :href="item.path">{{item.label}}</a>
-                </ul>
-            </div>
-        </transition>
+    <div id="app">
+        <v-app>
+            <v-main>
+                <v-toolbar elevation="4"></v-toolbar>
+                <v-container>Hello world</v-container>
+                <v-card width="400px" class="mx-auto mt-5">
+                    <v-card-title>fadfa</v-card-title>
+                    <v-card-subtitle>fadfa</v-card-subtitle>
+                    <v-card-text>fadsfasfasdfadf</v-card-text>
+                </v-card>
+            </v-main>
+        </v-app>
     </div>
 
-    <div class="background">
-        <p>{{ footer }}</p>
-    </div>
+    <!-- <div class="background">
+        <p id="footer">{{ footer }}</p>
+    </div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
     <script src="js/main.js"></script>
+    </script> -->
 </body>
 
 </html>
