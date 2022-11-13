@@ -29,14 +29,11 @@
                         <v-toolbar-title>YASSAN</v-toolbar-title>
                         <v-spacer></v-spacer>
 
-                        <v-btn icon>
-                            <v-icon>mdi-heart</v-icon>
-                        </v-btn>
-
                         <template v-slot:extension>
-                            <v-tabs align-with-title>
-                                <v-tab>About</v-tab>
-                                <v-tab>Works</v-tab>
+                            <v-tabs id="header-tab">
+                                <v-tab v-for="item in items">
+                                    {{ item.title }}
+                                </v-tab>
                             </v-tabs>
                         </template>
                     </v-app-bar>
@@ -46,44 +43,67 @@
                 <!-- Background img -->
                 <!--                -->
                 <div class="background"></div>
-
+                
                 <!--       -->
-                <!-- About -->
+                <!-- Profile -->
                 <!--       -->
                 <p id="subtitle" class="text-h3">
-                    About
+                    Profile
                 </p>
 
-                <v-card class="mx-auto mt-5">
-                    <v-card-title>yassan83830</v-card-title>
-                    <v-card-subtitle>学歴</v-card-subtitle>
-                    <v-card-text>fadsfasfasdfadf</v-card-text>
+                <v-card>
 
-                    <v-card-subtitle>学歴</v-card-subtitle>
-                    <v-card-text>fadsfasfasdfadf</v-card-text>
+                    <v-img height="250" src="./img/top_background.png">
+                    </v-img>
 
-                    <v-card-subtitle>賞</v-card-subtitle>
-                    <v-card-text>fadsfasfasdfadf</v-card-text>
+                    <v-card-title>
+                        YASSAN
+                    </v-card-title>
 
-                    <v-card-subtitle>スキル</v-card-subtitle>
-                    <v-card-text>fadsfasfasdfadf</v-card-text>
+                    <v-card-text>
+                        <div>
+                            1998年生まれ、広島市で育ち大のカープファン <br>
+                            趣味は、野球観戦や旅行、サイクリング、カメラ、ボランティア、Tシャツデザインなど <br>
+                            高専時代はグループでのものづくり、大学時代はボランティア活動に精を出した。<br>
+                            推しは「東海オンエア」と「アイドルのいる生活」<br>
+                        </div>
+                    </v-card-text>
 
+                    <v-divider class="mx-4"></v-divider>
 
-                    <v-card-subtitle>SNS</v-card-subtitle>
-                    <v-card-text>fadsfasfasdfadf</v-card-text>
+                    <v-card-text>
+                        <v-icon large>
+                            mdi-email
+                        </v-icon>
+                        o830takumay [at] gmail.com
+                    </v-card-text>
+
                 </v-card>
-            </v-main>
-        </v-app>
+
+                <div id="education">
+                    {{ edu_title }}
+                    <v-card v-for="e in edus">
+                        <v-card-text> {{ e.year }} {{ e.school }} </v-card-text>
+                    </v-card>
+                </div>
+
+
+    </div>
+    </v-card>
+
+
+
+    </v-main>
+    </v-app>
     </div>
 
-    <!-- <div class="background">
-        <p id="footer">{{ footer }}</p>
-    </div> -->
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
     <script src="js/main.js"></script>
-    </script> -->
+
 </body>
 
 </html>
