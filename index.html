@@ -51,40 +51,38 @@
                     Profile
                 </p>
 
-                <v-card>
-
-                    <v-img height="250" src="./img/top_background.png">
-                    </v-img>
-
-                    <v-card-title>
-                        YASSAN
-                    </v-card-title>
-
-                    <v-card-text>
-                        <div>
-                            1998年生まれ、広島市で育ち大のカープファン <br>
-                            趣味は、野球観戦や旅行、サイクリング、カメラ、ボランティア、Tシャツデザインなど <br>
-                            高専時代はグループでのものづくり、大学時代はボランティア活動に精を出した。<br>
-                            推しは「東海オンエア」と「アイドルのいる生活」<br>
-                        </div>
-                    </v-card-text>
-
-                    <v-divider class="mx-4"></v-divider>
-
-                    <v-card-text>
-                        <v-icon large>
-                            mdi-email
-                        </v-icon>
-                        o830takumay [at] gmail.com
-                    </v-card-text>
-
-                </v-card>
-
-                <div id="education">
-                    {{ edu_title }}
-                    <v-card v-for="e in edus">
-                        <v-card-text> {{ e.year }} {{ e.school }} </v-card-text>
+                <!-- About -->
+                <div>
+                    <v-card>
+                        <v-img height="250" src="./img/top_background.png">
+                        </v-img>
+    
+                        <v-card-title> {{ my[0].name }} </v-card-title>
+                        <v-card-text> {{ my[2].about }}</v-card-text>
+    
+                        <v-divider class="mx-4"></v-divider>
+    
+                        <v-card-text>
+                            <v-icon>mdi-email</v-icon>
+                            {{ my[3].email }}
+                        </v-card-text>
                     </v-card>
+                </div>
+                
+
+                <!-- Information -->
+                <div id="information">
+                    <template v-for="category in categories">
+                        <v-card>
+                            <v-card-title primary-title>
+                                {{ category.title }}
+                            </v-card-title>
+                            
+                            <v-card-text v-for="item in category.list">
+                                {{ item.year }}  {{ item.content}}
+                            </v-card-text>
+                        </v-card>
+                    </template>
                 </div>
 
 
