@@ -7,7 +7,9 @@
     el: '#app',
     vuetify: new Vuetify(),
     data: {
-      items: [
+      tab: null,
+      header_img: "./img/header/header01.jpg",
+      tab_title_list: [
         { title: 'Top' },
         { title: 'Profile' },
         { title: 'Works' }

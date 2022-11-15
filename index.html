@@ -11,84 +11,92 @@
 </head>
 
 <body>
-    <v-system-bar
-      dark
-      color="red lighten-2"
-    >
+
     <div id="app">
         <v-app>
-            <v-main>
 
+            <v-main>
                 <!--        -->
                 <!-- Header -->
                 <!--        -->
                 <v-card class="header" height="175">
-                    <v-app-bar absolute dark prominent src="./img/top_background.png">
+                    <v-app-bar absolute dark prominent>
 
                         <template v-slot:img="{ props }">
                             <v-img v-bind="props" gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)">
                             </v-img>
                         </template>
 
-                        <v-toolbar-title>YASSAN</v-toolbar-title>
+                        <v-toolbar-title>{{my[0].name}}</v-toolbar-title>
                         <v-spacer></v-spacer>
 
+                        <!-- Tab menu -->
                         <template v-slot:extension>
-                            <v-tabs id="header-tab">
-                                <v-tab v-for="item in items">
-                                    {{ item.title }}
-                                </v-tab>
+                            <v-tabs fixed-tabs v-model="tab">
+                                <v-tab>{{tab_title_list[0].title}}</v-tab>
+                                <v-tab>{{tab_title_list[1].title}}</v-tab>
+                                <v-tab>{{tab_title_list[2].title}}</v-tab>
                             </v-tabs>
                         </template>
                     </v-app-bar>
                 </v-card>
+<!-- 
 
-                <!--                -->
-                <!-- Background img -->
-                <!--                -->
-                <div class="background"></div>
-                
-                <!--       -->
-                <!-- Profile -->
-                <!--       -->
-                <p id="subtitle" class="text-h3">
-                    Profile
-                </p>
+                <!--  -->
+                <!-- Top -->
+                <!--  -->
+                <v-tabs-items v-model="tab">
+                    <v-tab-item>
+                        <!-- Background img -->
+                        <div class="background"></div>
+                    </v-tab-item>
 
-                <!-- About -->
-                <div>
-                    <v-card>
-                        <v-img height="250" src="./img/top_background.png">
-                        </v-img>
-    
-                        <v-card-title> {{ my[0].name }} </v-card-title>
-                        <v-card-text> {{ my[2].about }}</v-card-text>
-    
-                        <v-divider class="mx-4"></v-divider>
-    
-                        <v-card-text>
-                            <v-icon>mdi-email</v-icon>
-                            {{ my[3].email }}
-                        </v-card-text>
-                    </v-card>
-                </div>
-                
+                    <v-tab-item>
 
-                <!-- Information -->
-                <div id="information">
-                    <template v-for="category in categories">
-                        <v-card>
-                            <v-card-title primary-title>
-                                {{ category.title }}
-                            </v-card-title>
-                            
-                            <v-card-text v-for="item in category.list">
-                                {{ item.year }}  {{ item.content}}
-                            </v-card-text>
-                        </v-card>
-                    </template>
-                </div>
+                        <!--       -->
+                        <!-- Profile -->
+                        <!--       -->
 
+                        <!-- About -->
+                        <div>
+                            <v-card>
+                                <v-img height="250" src="./img/profile_icon.JPG">
+                                </v-img>
+
+                                <v-card-title> {{ my[0].name }} </v-card-title>
+                                <v-card-text> {{ my[2].about }}</v-card-text>
+
+                                <v-divider class="mx-4"></v-divider>
+
+                                <v-card-text>
+                                    <v-icon>mdi-email</v-icon>
+                                    {{ my[3].email }}
+                                </v-card-text>
+                            </v-card>
+                        </div>
+
+
+                        <!-- Information -->
+                        <div id="information">
+                            <template v-for="category in categories">
+                                <v-card>
+                                    <v-card-title primary-title>
+                                        {{ category.title }}
+                                    </v-card-title>
+
+                                    <v-card-text v-for="item in category.list">
+                                        <p>{{ item.year }}</p>
+                                        <p>{{ item.content}}</p>
+                                    </v-card-text>
+                                </v-card>
+                            </template>
+                        </div>
+                    </v-tab-item>
+
+                    <v-tab-item>
+                        works
+                    </v-tab-item>
+                </v-tabs-items>
 
     </div>
     </v-card>
