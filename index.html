@@ -40,7 +40,7 @@
                         </template>
                     </v-app-bar>
                 </v-card>
-<!-- 
+                <!-- 
 
                 <!--  -->
                 <!-- Top -->
@@ -58,22 +58,21 @@
                         <!--       -->
 
                         <!-- About -->
-                        <div>
-                            <v-card>
-                                <v-img height="250" src="./img/profile_icon.JPG">
-                                </v-img>
+                        <v-card>
+                            <v-img id="icon" src="./img/profile_icon.JPG">
+                            </v-img>
 
-                                <v-card-title> {{ my[0].name }} </v-card-title>
-                                <v-card-text> {{ my[2].about }}</v-card-text>
+                            <v-card-title> {{ my[0].name }} </v-card-title>
+                            <v-card-text> {{ my[2].about }}</v-card-text>
 
-                                <v-divider class="mx-4"></v-divider>
+                            <v-divider class="mx-4"></v-divider>
 
-                                <v-card-text>
-                                    <v-icon>mdi-email</v-icon>
-                                    {{ my[3].email }}
-                                </v-card-text>
-                            </v-card>
-                        </div>
+                            <v-card-text>
+                                <v-icon>mdi-email</v-icon>
+                                {{ my[3].email }}
+                            </v-card-text>
+                        </v-card>
+
 
 
                         <!-- Information -->
