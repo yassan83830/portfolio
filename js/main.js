@@ -119,7 +119,7 @@
           title: 'mymelody',
           imgpath: '05_mymelody.jpg',
           year: '2017',
-          text: 'EDGE INNOVATION GROOVE AWARD 最優秀賞&TDK賞を受賞ドアの開閉によってメロディが再生するデバイス、メロディ作成・共有サービスを考案！担当: 企画、発表資料作成、発表者、システム設計',
+          text: 'EDGE INNOVATION GROOVE AWARD 最優秀賞&TDK賞を受賞！ドアの開閉によってメロディが再生するデバイス、メロディ作成・共有サービスを考案！担当: 企画、発表資料作成、発表者、システム設計',
           skill: []
         },
         {
