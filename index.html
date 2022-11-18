@@ -40,23 +40,21 @@
                         </template>
                     </v-app-bar>
                 </v-card>
-                <!-- 
+                
 
-                <!--  -->
-                <!-- Top -->
-                <!--  -->
                 <v-tabs-items v-model="tab">
-                    <v-tab-item>
+                    <!--  -->
+                    <!-- Top -->
+                    <!--  -->
+                    <v-tab-item transition="fade-transition">
                         <!-- Background img -->
                         <div class="background"></div>
                     </v-tab-item>
 
-                    <v-tab-item>
-
-                        <!--       -->
-                        <!-- Profile -->
-                        <!--       -->
-
+                    <!--       -->
+                    <!-- Profile -->
+                    <!--       -->
+                    <v-tab-item transition="fade-transition">
                         <!-- About -->
                         <v-card>
                             <v-img id="icon" src="./img/profile_icon.JPG">
@@ -95,12 +93,12 @@
                     <!--  　　　-->
                     <!-- Works -->
                     <!--  　　　-->
-                    <v-tab-item>
+                    <v-tab-item transition="fade-transition">
                         <template v-for="work in works">
                             <v-card>
                                 <!-- <v-card-text>{{ work.imgpath }}</v-card-text> -->
                                 <v-card-title primary-title> {{ work.title }} </v-card-title>
-                                <v-img src="./img/work/03_noimage.png"></v-img>
+                                <v-img :src="'./img/work/' + work.imgpath"></v-img>
                                 <v-card-text> {{ work.year}}年 </v-card-text>
                                 <v-card-text> {{ work.text }} </v-card-text>
                             </v-card>
