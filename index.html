@@ -104,7 +104,7 @@
                                     <v-card-text>概要: {{ work.text }} </v-card-text>
                                     <v-card-text v-if="work.award !== null">受賞: {{ work.award }} </v-card-text>
                                     <v-card-text>人数: {{ work.people }}名</v-card-text>
-                                    <<v-card-text>担当: {{ work.responsible }}</v-card-text>
+                                    <v-card-text>担当: {{ work.responsible }}</v-card-text>
                                     <v-card-text>スキル:
                                         <v-chip class="ma-2" color="indigo darken-3" label outlined v-for="wskill in work.skill">{{ wskill }}</v-chip>
                                     </v-card-text>  
