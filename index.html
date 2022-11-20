@@ -40,7 +40,7 @@
                         </template>
                     </v-app-bar>
                 </v-card>
-                
+
 
                 <v-tabs-items v-model="tab">
                     <!--  -->
@@ -93,19 +93,24 @@
                     <!--  　　　-->
                     <!-- Works -->
                     <!--  　　　-->
+
                     <v-tab-item transition="fade-transition">
-                        <template v-for="work in works">
-                            <v-card>
-                                <!-- <v-card-text>{{ work.imgpath }}</v-card-text> -->
-                                <v-card-title primary-title> {{ work.title }} </v-card-title>
-                                <v-img :src="'./img/work/' + work.imgpath"></v-img>
-                                <v-card-text> {{ work.year}}年 </v-card-text>
-                                <v-card-text> {{ work.text }} </v-card-text>
-                            </v-card>
-                        </template>
+                        <div id="works">
+                            <template v-for="work in works">
+                                <v-card>
+                                    <v-card-title primary-title v-on:click="detail(work)"> {{ work.title }} </v-card-title>
+                                    <v-img :src="'./img/work/' + work.imgpath"></v-img>
+                                    <v-card-text>制作・活動期間: {{work.year[0]}} - {{work.year[1]}} </v-card-text>
+                                    <v-card-text>概要: {{ work.text }} </v-card-text>
+                                    <v-card-text v-if="work.award !== null">賞: {{ work.award }} </v-card-text>
+                                    <v-card-text>人数:{{ work.people }}人 </v-card-text>
+                                    <v-card-text>スキル:</v-card-text>
+                                    <v-chip class="ma-2" color="indigo darken-3" label outlined v-for="wskill in work.skill">{{ wskill }}</v-chip>
+                                </v-card>
+                            </template>
+                        </div>
                     </v-tab-item>
                 </v-tabs-items>
-
     </div>
     </v-card>
 

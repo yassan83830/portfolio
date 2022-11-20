@@ -90,130 +90,169 @@
         {
           title: '電子ルーレット',
           imgpath: '01_roulette.png',
-          year: '2015',
+          year: ['2015/6','2015/8'],
           text: 'Arduinoというマイコンを用いて開発した電子ルーレット。学校のオープンスクールの授業「流通すごろく」で使用するために開発。ボタンを押すと音が鳴りランダムで、ある数字のLEDが光るという仕組み。担当: プログラミング、箱のデザイン・設計、回路設計・開発',
-          skill: []
+          award: null,
+          skill: ['Arduino'],
+          people: '5'
         },
         {
           title: '私はメガネではありません',
           imgpath: '02_iamnotglasses.jpg',
-          year: '2016',
+          year: ['2016/1','2016/3'],
           text: 'ピンクのボタンを押すと「私はメガネではありません」としゃべるデバイスを開発。担当: 企画、ハードウェア設計',
-          skill: []
+          award: null,
+          skill: ['Arduino', '電子工作'],
+          people: '1'
         },
         {
           title: 'WakeUp!World!',
           imgpath: 'noimage.png',
-          year: '2016',
+          year: ['2016/7','2016/10'],
           text: '世界のひととつながるアラームアプリ。例えば朝7時にアラームを設定すると同じ時間に設定した世界のひとと起きることができる。担当：アラーム部の開発',
-          skill: []
+          award: null,
+          skill: ['HTML','CSS','Javascript','Monaca'],
+          people: '2'
         },
         {
           title: 'AUTO 応答 ハイ！',
           imgpath: '04_autooutouhi.jpg',
-          year: '2016',
+          year: ['2016/10','2016/12'],
           text: 'HACK U 大阪への参加のため4人で制作。会話の中で自分の名前や「～ですか？」という疑問を聞き取ると「はい！」と自動で返事してくるマスク。担当: 企画、ハードウェア設計',
-          skill: []
+          award: null,
+          skill: ['電子工作'],
+          people: '4'
         },
         {
           title: 'mymelody',
           imgpath: '05_mymelody.jpg',
-          year: '2017',
+          year: ['2017/4','2017/6'],
           text: 'EDGE INNOVATION GROOVE AWARD 最優秀賞&TDK賞を受賞！ドアの開閉によってメロディが再生するデバイス、メロディ作成・共有サービスを考案！担当: 企画、発表資料作成、発表者、システム設計',
-          skill: []
+          award: 'EDGE INNOVATION GROOVE AWARD 最優秀賞&TDK賞',
+          skill: ['ビジネスアイデア'],
+          people: '6'
         },
         {
           title: 'メロディー☆アート',
           imgpath: '06_melodyart.png',
-          year: '2017',
+          year: ['2017/4','2018/3'],
           text: '様々な音色のブロックをつなげて誰でも簡単に作曲ができるデバイス。全国高専プロコン敢闘賞、CVG中国最優秀賞を受賞。担当: リーダー, ハードウェア設計・開発、発表者, 発表資料作成',
-          skill: []
+          award: '2017 全国高等専門学校プログラミングコンテスト 自由部門 敢闘賞, キャンパスベンチャーグランプリ中国 最優秀賞',
+          skill: ['電子工作', 'Kicad(回路設計CAD)', 'ビジネスアイデア'],
+          people: '6'
         },
         {
           title: 'さめ☆コイ～さめくんと恋するJKライフ～',
           imgpath: '07_samekoi.png',
-          year: '2017',
+          year: ['2017/10','2017/12'],
           text: '「さめくん」というオリジナルキャラクターが主人公の恋愛RPGゲーム。コミックマーケットに仲間と作ったゲームCDを出品した。担当: 企画、開発',
-          skill: []
+          award: null,
+          skill: ['シミュレーションゲーム制作'],
+          people: '1'
         },
         {
           title: '卍アート',
           imgpath: '07_manjiart.png',
-          year: '2018',
+          year: ['2018/1','2018/3'],
           text: '普段「卍」なんて言葉を使わない作者が、ありったけの「卍」をコンセプトにした作品。第25回コンピュータフェスティバルにて、ブース審査 優秀賞を受賞！！！担当: アニメーション企画制作全般',
-          skill: []
+          award: '第25回コンピュータフェスティバル ブース審査優秀賞',
+          skill: ['Processing', 'Shotcut(動画編集)'],
+          people: '1'
         },
         {
           title: '☆ハイタッチ☆',
           imgpath: '08_hightouch.PNG',
-          year: '2018',
+          year: ['2018/6','2018/8'],
           text: '☆ハイタッチ☆は、世界中のハッピーを共有するハイタッチSNS。いつでもどこでも一人でもスマートフォンにハイタッチをすることで世界中にハッピーな気持ちを発信・共有！世界中の人々の「嬉しい」や「楽しい」「達成感」「称賛」のハッピーな言葉によってつながることができます。担当: 企画、システム設計・開発、プログラマー、発表資料作成、発表者',
-          skill: []
+          award: null,
+          skill: ['HTML','CSS','Javascript','Monaca','ニフクラ mobile backend'],
+          people: '3'
         },
         {
           title: 'まきまきマキアートDX',
           imgpath: '09_makiart.jpg',
-          year: '2018',
+          year: ['2018/5','2018/10'],
           text: '楽しくデザインまきずしを作るためのデバイス。担当: 開発サポート、Unityによるアニメーション制作',
-          skill: []
+          award: '2018 全国高等専門学校プログラミングコンテスト 自由部門　トヨタコミュニケーションシステム企業賞',
+          skill: ['Unity', 'Git', 'Bitbucket'],
+          people: '6'
         },
         {
           title: '混色電卓',
           imgpath: '10_colormixcalculator.png',
-          year: '2018',
+          year: ['2018/10','2018/11'],
           text: '混色をテーマにしたウェブ電卓アプリ。スマホを振ると色が変化して混色した結果が表示される。担当: 企画、開発',
-          skill: []
+          award: null,
+          skill: ['HTML','CSS','Javascript'],
+          people: '1'
         },
         {
           title: 'リング',
           imgpath: 'imgpath: 11_ring.png',
-          year: '2019',
+          year: ['2018/11','2019/2'],
           text: '流通情報工学科をテーマにした販売ボードゲーム。担当: リーダー、ゲーム運営',
-          skill: []
+          award: null,
+          skill: ['流通情報工学科の学問全般'],
+          people: '6'
         },
         {
           title: 'ジモ☆タビ',
           imgpath: '12_jimotabi.png',
-          year: '2018-2019',
+          year: ['2018/4','2019/2'],
           text: '旅行客や地元住民による写真の投稿や旅行プランの提案や自動作成、地元住民のガイドと のマッチングによって旅行のサポートをするスマートフォンアプリ。担当: 企画、システム設計・開発、フロント・バッグエンド',
-          skill: []
+          award: null,
+          skill: ['HTML','CSS','Typescript','Ionic','Monaca','Firebase'],
+          people: '3'
         },
         {
           title: '☆ひとで☆',
           imgpath: '13_hitode.png',
-          year: '2019',
+          year: ['2019/8','2019/9'],
           text: 'ひとりのお出かけを楽しむソロ活ルート共有アプリ。技科大アイデアピッチ優秀賞。担当: ビジネスアイデア企画、発表資料作成、発表者',
-          skill: []
+          award: '技科大アイデアピッチ 優秀賞',
+          skill: ['ビジネスアイデア'],
+          people: '1'
         },
         {
           title: '広島方言Tシャツ',
           imgpath: '14_hiroshimatshirt.png',
-          year: '2020',
+          year: ['2020/5','継続中'],
           text: '広島県の方言である「広島弁」をモチーフにしたTシャツのデザイン・販売をしています！例えば、画像右上の「tawan たわん」は標準語で「届かない」という意味で、野球ロゴ風にデザインしました。担当: 企画、デザイン',
-          skill: []
+          award: null,
+          skill: ['Affinity Designer'],
+          people: '1'
         },
         {
           title: '店内混雑度推定システム',
           imgpath: '15_In_store_congestion_estimation_system.png',
-          year: '2020-2021',
+          year: ['2020/9','2021/2'],
           text: '大学の学部の卒業研究のため開発。Wi-Fiパケットを利用した混雑度推定システムを開発・実装して、実際の飲食店にて実際に2回実験を行った。システム設計・開発、実験、データ分析',
-          skill: []
+          award: null,
+          skill: ['Raspberry Pi', 'Python', 'tcpdump'],
+          people: '1'
+        },        
+        {
+          title: '表浜BLUE WALK 2020-2021',
+          imgpath: '17_bluewalk2021_day1.png',
+          year: ['2020/12','2021/8'],
+          text: '2021年8月に愛知県豊橋・田原の表浜海岸にて5日間開催された「表浜BLUE WALK 2020-2021」のロゴ制作と1日目のリーダーを担当。ロゴ制作は、海とBLUEWALKの「青」、表浜海岸の「人」「生物」「伊良湖岬の灯台」「カメ」、環境の「理沙育マーク」をもとにデザインした。1日目のリーダーでは、シフト・スケジュール、当日の指揮、ワークショップの企画・運営を行った。ワークショップでは、「環境・ゴミ○×クイズ」、Reduce、Reuse、Recycle、Refuse、Repairの5Rに続く「6R目を考えよう」を行った。「来年も参加したい！」という参加者の声があり嬉しかった。担当: イベント企画・運営、ロゴ制作',
+          award: null,
+          skill: ['企画', 'SNS運用(公式LINE)'],
+          people: '21'
         },
         {
           title: '私はロボットではありません',
           imgpath: '16_iamnotrobot.png',
-          year: '2021',
+          year: ['2021/10','2021/11'],
           text: 'ロボット認証をもとにしたクイズゲームアプリ。画面に表示される9つの画像からテーマにあった画像をタップして正解を見つけるゲーム。担当: クイズの作問、画像データ収集',
-          skill: []
-        },
-        {
-          title: '表浜BLUE WALK 2020-2021',
-          imgpath: '17_bluewalk2021_day1.png',
-          year: '2021',
-          text: '2021年8月に愛知県豊橋・田原の表浜海岸にて5日間開催された「表浜BLUE WALK 2020-2021」のロゴ制作と1日目のリーダーを担当。ロゴ制作は、海とBLUEWALKの「青」、表浜海岸の「人」「生物」「伊良湖岬の灯台」「カメ」、環境の「理沙育マーク」をもとにデザインした。1日目のリーダーでは、シフト・スケジュール、当日の指揮、ワークショップの企画・運営を行った。ワークショップでは、「環境・ゴミ○×クイズ」、Reduce、Reuse、Recycle、Refuse、Repairの5Rに続く「6R目を考えよう」を行った。「来年も参加したい！」という参加者の声があり嬉しかった。担当: イベント企画・運営、ロゴ制作',
-          skill: []
+          award: null,
+          skill: ['クイズ制作'],
+          people: '2'
         }
-      ]
+      ],
+      detail: function (work){
+        alert(work.title)
+      }
     }
   })
 
