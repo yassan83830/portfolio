@@ -100,12 +100,14 @@
                                 <v-card>
                                     <v-card-title primary-title v-on:click="detail(work)"> {{ work.title }} </v-card-title>
                                     <v-img :src="'./img/work/' + work.imgpath"></v-img>
-                                    <v-card-text>制作・活動期間: {{work.year[0]}} - {{work.year[1]}} </v-card-text>
+                                    <v-card-text>活動期間: {{work.year[0]}} - {{work.year[1]}} </v-card-text>
                                     <v-card-text>概要: {{ work.text }} </v-card-text>
-                                    <v-card-text v-if="work.award !== null">賞: {{ work.award }} </v-card-text>
-                                    <v-card-text>人数:{{ work.people }}人 </v-card-text>
-                                    <v-card-text>スキル:</v-card-text>
-                                    <v-chip class="ma-2" color="indigo darken-3" label outlined v-for="wskill in work.skill">{{ wskill }}</v-chip>
+                                    <v-card-text v-if="work.award !== null">受賞: {{ work.award }} </v-card-text>
+                                    <v-card-text>人数: {{ work.people }}名</v-card-text>
+                                    <<v-card-text>担当: {{ work.responsible }}</v-card-text>
+                                    <v-card-text>スキル:
+                                        <v-chip class="ma-2" color="indigo darken-3" label outlined v-for="wskill in work.skill">{{ wskill }}</v-chip>
+                                    </v-card-text>  
                                 </v-card>
                             </template>
                         </div>
