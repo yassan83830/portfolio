@@ -199,7 +199,7 @@
         },
         {
           title: 'リング',
-          imgpath: 'imgpath: 11_ring.png',
+          imgpath: '11_ring.png',
           year: ['2018/11','2019/2'],
           text: '流通情報工学科をテーマにした販売ボードゲーム。',
           award: null,
