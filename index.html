@@ -93,26 +93,61 @@
                     <!--  　　　-->
                     <!-- Works -->
                     <!--  　　　-->
-
                     <v-tab-item transition="fade-transition">
-                        <div id="works">
-                            <template v-for="work in works" :key="work">
-                                <v-card>
-                                    <v-card-title class="font-weight-bold" primary-title v-on:click="detail(work)"> {{ work.title }} </v-card-title>
-                                    <v-img height="720" contain class="grey lighten-3" :src="'./img/work/' + work.imgpath"></v-img>
-                                    <v-card-text>活動期間: {{work.year[0]}} - {{work.year[1]}} </v-card-text>
-                                    <v-card-text>概要: {{ work.text }} </v-card-text>
-                                    <v-card-text v-if="work.award !== null">受賞: {{ work.award }} </v-card-text>
-                                    <v-card-text>人数: {{ work.people }}名</v-card-text>
-                                    <v-card-text>担当: {{ work.responsible }}</v-card-text>
-                                    <v-card-text>スキル:
-                                        <v-chip class="ma-2" color="indigo darken-3" label outlined v-for="wskill in work.skill">{{ wskill }}</v-chip>
-                                    </v-card-text>  
-                                </v-card>
-                            </template>
-                        </div>
-                    </v-tab-item>
-                </v-tabs-items>
+                        <template>
+                            <v-row justify-center>
+                                <v-expansion-panels>
+                                    <v-expansion-panel class="red lighten-5" v-for="work in works" :key="work">
+                                        <v-expansion-panel-header>
+                                            <v-img
+                                                :src="'./img/work/' + work.imgpath"></v-img>
+                                        </v-expansion-panel-header>
+                                        <v-expansion-panel-content>
+                                            <v-card>
+                                                <v-card-title class="font-weight-bold" primary-title v-on:click="detail(work)">
+                                                    {{ work.title }}
+                                                </v-card-title>
+                                                <v-card-text>活動期間: {{work.year[0]}} - {{work.year[1]}} </v-card-text>
+                                                <v-card-text>概要: {{ work.text }} </v-card-text>
+                                                <v-card-text v-if="work.award !== null">受賞: {{ work.award }}</v-card-text>
+                                                <v-card-text>人数: {{ work.people }}名</v-card-text>
+                                                <v-card-text>担当: {{ work.responsible }}</v-card-text>
+                                                <v-card-text>スキル:
+                                                    <v-chip class="ma-2" color="indigo darken-3" label outlined
+                                                        v-for="wskill in work.skill">{{ wskill }}
+                                                    </v-chip>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-expansion-panel-content>
+                                    </v-expansion-panel>
+                                </v-expansion-panels>
+                            </v-row>
+                        </template>
+                    </v-tabs-items>
+
+                        <!-- <v-tab-item transition="fade-transition">
+                            <div id="works">
+                                <template v-for="work in works" :key="work">
+                                    <v-card>
+                                        <v-card-title class="font-weight-bold" primary-title v-on:click="detail(work)">
+                                            {{ work.title }}
+                                        </v-card-title>
+                                        <v-img :src="'./img/work/' + work.imgpath"></v-img>
+                                        <v-card-text>活動期間: {{work.year[0]}} - {{work.year[1]}} </v-card-text>
+                                        <v-card-text>概要: {{ work.text }} </v-card-text>
+                                        <v-card-text v-if="work.award !== null">受賞: {{ work.award }}</v-card-text>
+                                        <v-card-text>人数: {{ work.people }}名</v-card-text>
+                                        <v-card-text>担当: {{ work.responsible }}</v-card-text>
+                                        <v-card-text>スキル:
+                                            <v-chip class="ma-2" color="indigo darken-3" label outlined
+                                                v-for="wskill in work.skill">{{ wskill }}
+                                            </v-chip>
+                                        </v-card-text>
+                                    </v-card>
+                                </template>
+                            </div>
+                        </v-tab-item> -->
+                <!-- </v-tabs-items> -->
     </div>
     </v-card>
 
