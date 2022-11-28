@@ -15,23 +15,28 @@ body {
 
 #message-box {
     position: absolute;
-    color: rgb(242, 217, 222);
+    font-weight: bold;
     right: 20px;
-    -webkit-text-stroke: 1px #FFF;
     font-family: 'Noto Serif JP', serif;
 }
 
 #message{
+    color: rgb(242, 217, 222);
     font-size: 3.2em;
     text-align: right;
     padding-top:80px;
 }
 
 #submessage{
+    color: rgb(91, 55, 62);
     font-size: 1.0em;
     text-align: right;
 }
 
+#submessage span{
+    background: rgba(242, 217, 222, 0.8);
+    padding: 5px;
+}
 
 #icon{
     display: block;
