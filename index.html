@@ -69,8 +69,6 @@
                                     ぜひ、ご覧ください！
                                 </p>
                             </div>
-                            
-                            
                         </div>
                     </v-tab-item>
 
@@ -102,8 +100,8 @@
 
                         <!-- Information -->
                         <div id="information">
-                            <template v-for="category in categories" ::key="category">
-                                <v-card>
+                            <template>
+                                <v-card v-for="category in categories" :key="category">
                                     <!-- カテゴリ別のタイトル -->
                                     <v-card-title primary-title>
                                         {{ category.title }}
@@ -114,6 +112,19 @@
                                         <p>{{ item.year }}</p>
                                         <p>{{ item.content}}</p>
                                     </v-card-text>
+                                </v-card>
+
+                                <!-- スキル -->
+                                <v-card v-for="skill in skills" :key="skill">
+                                    <!-- タイトル -->
+                                    <v-card-title>
+                                        {{skill.title}}
+                                    </v-card-title>
+
+                                    <!-- 内容 -->
+                                    <v-chip class="ma-2" color="indigo darken-3" label outlined 
+                                        v-for="item in skill.list" :key="item">{{ item }}
+                                    </v-chip>
                                 </v-card>
                             </template>
                         </div>

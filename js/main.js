@@ -72,18 +72,43 @@
             { year: '2016', content: 'ITパスポート試験 合格' },
             { year: '2016', content: '漢字検定準2級' }
           ]
-        },
+        }
+      ],
+      skills: [
         {
-          title: 'Programming',
+          title: 'Skill',
           list: [
-            { year: '', content: 'C' },
-            { year: '', content: 'C++' },
-            { year: '', content: 'Java' },
-            { year: '', content: 'HTML/CSS' },
-            { year: '', content: 'Javascript' },
-            { year: '', content: 'Typescript' },
-            { year: '', content: 'Python' }
-          ]
+            'C',
+            'C++',
+            'Java',
+            'HTML/CSS',
+            'Javascript',
+            'Typescript',
+            'Python',
+            'Processing',
+            'Unity',
+            'Ionic',
+            'Github',
+            'Git', 
+            'Bitbucket',
+            'Arduino',
+            'Raspberry Pi',
+            'tcpdump',
+            'Monaca',
+            'ニフクラ mobile backend',
+            'Firebase',
+            '電子工作',
+            'Kicad(回路設計CAD)',
+            'ビジネスアイデア企画',
+            'Affinity designer',
+            'Tシャツデザイン',
+            'ロゴ制作',
+            'シミュレーションゲーム制作',
+            'クイズ制作',
+            '裁縫・マスク制作',
+            'SNS運用(Twitter, 公式LINE)',
+            'ボランティア'
+          ],
         }
       ],
       works: [
@@ -131,7 +156,7 @@
           title: 'mymelody【EDGE INNOVATION GROOVE AWARD 最優秀賞】',
           imgpath: '05_mymelody.jpg',
           year: ['2017/4','2017/6'],
-          text: '　ドアの開閉によってメロディが再生するデバイス、メロディ作成・共有サービス「mymelody」を企画・考案。「EDGE INNOVATION GROOVE AWARD」という文部科学省主催のビジネスアイデアコンテストで最優秀賞とTDK賞を受賞。初対面の社会人、大学院生、小学生の6人グループでアイデアを企画した。「mymelody」は、ドアの開け閉めすると音があるデバイスで、日常空間やオフィスで気軽に音楽を楽しむことができる。また、アプリ上で簡単に曲を作ることができ、自作曲をドアの音として使用したり、成果中のひとに共有できる。',
+          text: 'ドアの開閉によってメロディが再生するデバイス、メロディ作成・共有サービス「mymelody」を企画・考案。「EDGE INNOVATION GROOVE AWARD」という文部科学省主催のビジネスアイデアコンテストで最優秀賞とTDK賞を受賞。初対面の社会人、大学院生、小学生の6人グループでアイデアを企画した。「mymelody」は、ドアの開け閉めすると音があるデバイスで、日常空間やオフィスで気軽に音楽を楽しむことができる。また、アプリ上で簡単に曲を作ることができ、自作曲をドアの音として使用したり、成果中のひとに共有できる。',
           award: 'EDGE INNOVATION GROOVE AWARD 最優秀賞&TDK賞',
           skill: ['ビジネスアイデア'],
           people: '6',
