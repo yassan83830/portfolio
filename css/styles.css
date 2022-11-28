@@ -13,6 +13,26 @@ body {
     position: relative;
 }
 
+#message-box {
+    position: absolute;
+    color: rgb(242, 217, 222);
+    right: 20px;
+    -webkit-text-stroke: 1px #FFF;
+    font-family: 'Noto Serif JP', serif;
+}
+
+#message{
+    font-size: 3.2em;
+    text-align: right;
+    padding-top:80px;
+}
+
+#submessage{
+    font-size: 1.0em;
+    text-align: right;
+}
+
+
 #icon{
     display: block;
     margin-left: auto;
