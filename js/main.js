@@ -17,8 +17,9 @@
       my: [
         { name: 'Takuma Yasumori'},
         { icon: "./img/top_background.png"},
-        { about: '1998年生まれ、広島市で育ち大のカープファン。趣味は、野球観戦や旅行、サイクリング、カメラ、ボランティア、Tシャツデザインなど。高専時代はグループでのモノづくり、大学時代はボランティア活動に精を出した。 推しは「東海オンエア」と「アイドルのいる生活」'},
-        { email: 'o830takumay [at] gmail.com'}
+        { about: '1998年生まれ、広島市で生まれ育つ。学生時代は広島県大崎上島町と愛知県豊橋市で過ごす。趣味は、プロ野球観戦や旅行、サイクリング、カメラ、ボランティア、Tシャツデザインなど。高専時代はグループでのモノづくり、大学時代はボランティア活動に力を注いだ。 推しはYouTuberの「東海オンエア」と「アイドルのいる生活」。'},
+        { email: 'o830takumay [at] gmail.com'},
+        { email2: 'yassan_83_830 [at] yahoo.co.jp'}
       ],
       categories: [
         {
@@ -27,7 +28,8 @@
             { year: '2014-2019', content: '広島商船高等専門学校 流通情報工学科 卒業' },
             { year: '2018 August(2weeks)', content: 'Emilio Aguinaldo College International Language Institute Manila, Philippines English Proficiency Program 修了' },
             { year: '2019-2021', content: '豊橋技術科学大学 工学部 情報・知能工学科 卒業' },
-            { year: '2021-', content: '豊橋技術科学大学 博士前期課程 情報・知能工学専攻 在学中' }
+            { year: '2021-', content: '豊橋技術科学大学 博士前期課程 情報・知能工学専攻 入学' },
+            { year: '2022-', content: '豊橋技術科学大学 博士前期課程 情報・知能工学専攻 2年次 休学' }
           ]
         },
         {
@@ -48,8 +50,8 @@
         {
           title: 'Internship',
           list: [
-            { year: '2019(3weeks)', content: 'マツダ株式会社' },
-            { year: '2020(6months)', content: '株式会社ウェブインパクト 豊橋コア' }
+            { year: '2019(3weeks)', content: 'マツダ株式会社: 車の通信技術に関する企画開発' },
+            { year: '2020(6months)', content: '株式会社ウェブインパクト 豊橋コア: 愛知県豊橋市のグルメ情報サイト「食べてみりん」の立ち上げ' }
           ]
         },
         {
@@ -64,13 +66,13 @@
           ]
         },
         {
-          title: 'Qualifying Examination',
+          title: 'Qualifications and Certifications',
           list: [
-            { year: '2014', content: 'ニュース時事能力検定 3級' },
-            { year: '2014', content: '日本語ワープロ検定 第2級' },
-            { year: '2015', content: '情報処理技能検定試験 表計算 第3級' },
-            { year: '2016', content: 'ITパスポート試験 合格' },
-            { year: '2016', content: '漢字検定準2級' }
+            { year: '2014.10', content: 'ニュース時事能力検定 3級' },
+            { year: '2014.12', content: '日本語ワープロ検定 第2級' },
+            { year: '2015.2', content: '情報処理技能検定試験 表計算 第3級' },
+            { year: '2016.2', content: 'ITパスポート試験 合格' },
+            { year: '2016.7', content: '漢字検定準2級' }
           ]
         }
       ],
