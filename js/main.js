@@ -295,9 +295,6 @@
           responsible: 'クイズの作問、画像データ収集'
         }
       ],
-      detail: function (work){
-        alert(work.title)
-      }
     }
   })
 
