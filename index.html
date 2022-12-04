@@ -18,7 +18,6 @@
 
     <div id="app">
         <v-app>
-
             <v-main>
                 <!--        -->
                 <!-- Header -->
@@ -57,18 +56,18 @@
                                 <p id="message">つくるって、<br>楽しい</p>
                                 <p id="submessage">
                                     <span>
-                                    16歳から24歳まで<br>
-                                    モノやコトを「作る・創る」活動を<br>
-                                    たくさん体験しました。<br>
-                                    電子ルーレットから始まり<br>
-                                    しゃべるマスク、音のおもちゃ<br>
-                                    ボランティアイベントなど<br>
-                                    様々なモノ・コトを作って<br>
-                                    多くの仲間と出会いました。<br>
-                                    このポートフォリオサイトでは<br>
-                                    私のプロフィール<br>
-                                    モノ・コトづくりについて紹介しています。<br>
-                                    ぜひ、ご覧ください！
+                                        16歳から24歳まで<br>
+                                        モノやコトを「作る・創る」活動を<br>
+                                        たくさん体験しました。<br>
+                                        電子ルーレットから始まり<br>
+                                        しゃべるマスク、音のおもちゃ<br>
+                                        ボランティアイベントなど<br>
+                                        様々なモノ・コトを作って<br>
+                                        多くの仲間と出会いました。<br>
+                                        このポートフォリオサイトでは<br>
+                                        私のプロフィール<br>
+                                        モノ・コトづくりについて紹介しています。<br>
+                                        ぜひ、ご覧ください！
                                     </span>
                                 </p>
                             </div>
@@ -80,60 +79,62 @@
                     <!--       -->
                     <v-tab-item transition="fade-transition">
                         <!-- About -->
-                        <v-card>
-                            <!-- icon -->
-                            <v-img id="icon" src="./img/profile_icon.JPG">
-                            </v-img>
+                        <div class="profile">
+                            <v-card>
+                                <!-- icon -->
+                                <v-img id="icon" src="./img/profile_icon.JPG">
+                                </v-img>
 
-                            <!-- 自己紹介 -->
-                            <v-card-title> 安森琢真 ({{ my[0].name }})</v-card-title>
-                            <v-card-text> {{ my[2].about }}</v-card-text>
+                                <!-- 自己紹介 -->
+                                <v-card-title> 安森琢真 ({{ my[0].name }})</v-card-title>
+                                <v-card-text> {{ my[2].about }}</v-card-text>
 
-                            <!-- 仕切り線 -->
-                            <v-divider class="mx-4"></v-divider>
+                                <!-- 仕切り線 -->
+                                <v-divider class="mx-4"></v-divider>
 
-                            <!-- E-mail -->
-                            <v-card-text>
-                                <v-icon>mdi-email</v-icon>
-                                {{ my[3].email }}
-                            </v-card-text>
-                            <v-card-text>
-                                <v-icon>mdi-email</v-icon>
-                                {{ my[4].email2 }}
-                            </v-card-text>
-                        </v-card>
+                                <!-- E-mail -->
+                                <v-card-text>
+                                    <v-icon>mdi-email</v-icon>
+                                    {{ my[3].email }}
+                                </v-card-text>
+                                <v-card-text>
+                                    <v-icon>mdi-email</v-icon>
+                                    {{ my[4].email2 }}
+                                </v-card-text>
+                            </v-card>
 
 
 
-                        <!-- Information -->
-                        <div id="information">
-                            <template>
-                                <v-card v-for="category in categories" :key="category">
-                                    <!-- カテゴリ別のタイトル -->
-                                    <v-card-title primary-title>
-                                        {{ category.title }}
-                                    </v-card-title>
+                            <!-- Information -->
+                            <div id="information">
+                                <template>
+                                    <v-card v-for="category in categories" :key="category">
+                                        <!-- カテゴリ別のタイトル -->
+                                        <v-card-title primary-title>
+                                            {{ category.title }}
+                                        </v-card-title>
 
-                                    <!-- 年別の内容 -->
-                                    <v-card-text v-for="item in category.list" :key="item">
-                                        <p>{{ item.year }}</p>
-                                        <p>{{ item.content}}</p>
-                                    </v-card-text>
-                                </v-card>
+                                        <!-- 年別の内容 -->
+                                        <v-card-text v-for="item in category.list" :key="item">
+                                            <p>{{ item.year }}</p>
+                                            <p>{{ item.content}}</p>
+                                        </v-card-text>
+                                    </v-card>
 
-                                <!-- スキル -->
-                                <v-card v-for="skill in skills" :key="skill">
-                                    <!-- タイトル -->
-                                    <v-card-title>
-                                        {{skill.title}}
-                                    </v-card-title>
+                                    <!-- スキル -->
+                                    <v-card v-for="skill in skills" :key="skill">
+                                        <!-- タイトル -->
+                                        <v-card-title>
+                                            {{skill.title}}
+                                        </v-card-title>
 
-                                    <!-- 内容 -->
-                                    <v-chip class="ma-2" color="indigo darken-3" label outlined 
-                                        v-for="item in skill.list" :key="item">{{ item }}
-                                    </v-chip>
-                                </v-card>
-                            </template>
+                                        <!-- 内容 -->
+                                        <v-chip class="ma-2" color="indigo darken-3" label outlined
+                                            v-for="item in skill.list" :key="item">{{ item }}
+                                        </v-chip>
+                                    </v-card>
+                                </template>
+                            </div>
                         </div>
                     </v-tab-item>
 
@@ -141,7 +142,7 @@
                     <!-- Works -->
                     <!--  　　　-->
                     <v-tab-item transition="fade-transition">
-                        <div id="works">
+                        <div class="works">
                             <template v-for="work in works" :key="work">
                                 <v-card>
                                     <!-- タイトル -->
