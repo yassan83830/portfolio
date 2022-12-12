@@ -25,11 +25,13 @@
         {
           title: 'Education',
           list: [
-            { year: '2014-2019', content: '広島商船高等専門学校 流通情報工学科 卒業' },
-            { year: '2018 August(2weeks)', content: 'Emilio Aguinaldo College International Language Institute Manila, Philippines English Proficiency Program 修了' },
-            { year: '2019-2021', content: '豊橋技術科学大学 工学部 情報・知能工学科 卒業' },
-            { year: '2021-', content: '豊橋技術科学大学 博士前期課程 情報・知能工学専攻 入学' },
-            { year: '2022-', content: '豊橋技術科学大学 博士前期課程 情報・知能工学専攻 2年次 休学' }
+            { year: '2014/4', content: '広島商船高等専門学校 流通情報工学科 入学' },
+            { year: '2018/8 (2weeks)', content: 'Emilio Aguinaldo College International Language Institute Manila, Philippines English Proficiency Program 修了' },
+            { year: '2019/3', content: '広島商船高等専門学校 流通情報工学科 卒業' },
+            { year: '2019/4', content: '豊橋技術科学大学 工学部 情報・知能工学科 3年次 編入学' },
+            { year: '2021/3', content: '豊橋技術科学大学 工学部 情報・知能工学科 卒業' },
+            { year: '2021/4', content: '豊橋技術科学大学大学院 工学研究科博士前期課程 情報・知能工学専攻 入学' },
+            { year: '2022/4', content: '豊橋技術科学大学大学院 工学研究科博士前期課程 情報・知能工学専攻 2年次 休学' }
           ]
         },
         {
